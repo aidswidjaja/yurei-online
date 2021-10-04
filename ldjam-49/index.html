@@ -7,7 +7,7 @@
   </head>
   <body style="text-align: center">
     <canvas id="unity-canvas" width=960 height=600 style="width: 960px; height: 600px; background: #231F20"></canvas>
-    <script src="Build/final.loader.js"></script>
+    <script src="Build/rc3.loader.js"></script>
     <script>
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
         // Mobile device style: fill the whole browser client area with the game canvas:
@@ -18,13 +18,13 @@
       }
 
       createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "Build/final.data.unityweb",
-        frameworkUrl: "Build/final.framework.js.unityweb",
-        codeUrl: "Build/final.wasm.unityweb",
+        dataUrl: "Build/rc3.data.unityweb",
+        frameworkUrl: "Build/rc3.framework.js.unityweb",
+        codeUrl: "Build/rc3.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "Pigeon Game Studios",
         productName: "ludum-dare-49",
-        productVersion: "indev-2",
+        productVersion: "rc3",
         // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
         // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
       });
