@@ -3,17 +3,19 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | ludum-dare-49</title>
+    <title>The Lonely Ghost Speedrun Edition!! | WebGL</title>
   </head>
   <body style="text-align: center">
 	  <h1>Speedrun version!!</h1>
 	  <a href="http://heyo.adrian.id.au/yurei-online/scoreboard">See leaderboard</a>
 	  <p>This site won't work unless you're at http://heyo.adrian.id.au/yurei-online</p>
 	  <br>
+	  <p><b>You must be using insecure HTTP since I can't afford $5 for SSL</b></p>
+	  <br>
 	  <hr>
 	  <br>
     <canvas id="unity-canvas" width=960 height=600 style="width: 960px; height: 600px; background: #231F20"></canvas>
-    <script src="Build/speedrun.loader.js"></script>
+    <script src="Build/speedrun-2.loader.js"></script>
     <script>
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
         // Mobile device style: fill the whole browser client area with the game canvas:
@@ -24,9 +26,9 @@
       }
 
       createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "Build/speedrun.data.unityweb",
-        frameworkUrl: "Build/speedrun.framework.js.unityweb",
-        codeUrl: "Build/speedrun.wasm.unityweb",
+        dataUrl: "Build/speedrun-2.data.unityweb",
+        frameworkUrl: "Build/speedrun-2.framework.js.unityweb",
+        codeUrl: "Build/speedrun-2.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "Pigeon Game Studios",
         productName: "ludum-dare-49",
